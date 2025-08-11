@@ -1,27 +1,73 @@
-# NextGenApp — Next.js Fullstack Boilerplate
+# NextGenApp Gen 2 - Expanded Full Stack Boilerplate
 
-Features:
-- Next.js (App Router) + TypeScript + Tailwind
-- Redux Toolkit + Apollo Client
-- GraphQL via /api/graphql (apollo-server-micro)
-- MongoDB (Mongoose) models and seed script
-- JWT auth with refresh tokens (HttpOnly cookies)
-- OpenAPI (public/openapi.json) + swagger static UI
-- Dockerfile + docker-compose + nginx proxy
-- Generator scripts: component/page/resolver
-- Github Actions CI template, ESLint, Prettier, Jest
+An upgraded developer-friendly boilerplate with **auth, Redux, Docker, and CI/CD**.
 
-Quickstart:
-1. cp .env.example .env
-2. npm ci
-3. npm run dev
-4. Open http://localhost:3000
+---
 
-Docker quickstart (requires docker-compose):
-1. cd infra
-2. docker-compose up --build
+## ✨ Features
 
-Generator examples:
-- npm run gen:component -- ComponentName
-- npm run gen:page -- pageName
-- npm run gen:resolver -- ResolverName
+- **Frontend:** Vite + React + Redux Toolkit + TailwindCSS + Apollo Client
+- **Backend:** Express.js + Apollo Server (GraphQL) + MongoDB (Mongoose)
+- **Authentication:** JWT-based login & registration
+- **Swagger UI** for API documentation
+- **Dockerized** for local & production use
+- **CI/CD Ready:** GitHub Actions workflow template
+- **Generators:** CLI scripts to scaffold components & resolvers
+
+---
+
+## 📂 Folder Structure
+
+<codeblock>
+NextGenApp/
+  frontend/
+    src/
+      components/
+      store/
+  backend/
+    src/
+      models/
+      resolvers/
+      middleware/
+  infra/
+    docker-compose.yml
+  scripts/
+</codeblock>
+
+---
+
+## 🚀 Getting Started
+
+<codeblock>
+# Clone repo
+git clone https://github.com/YOURNAME/nextgenapp.git
+cd nextgenapp
+
+# Install dependencies
+npm run install:all
+
+# Start in dev mode
+npm run dev:all
+</codeblock>
+
+---
+
+## 🐳 Docker
+
+<codeblock>
+docker-compose up --build
+</codeblock>
+
+---
+
+## 🧪 Testing
+
+<codeblock>
+npm run test
+</codeblock>
+
+---
+
+## 📜 License
+
+MIT
